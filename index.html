@@ -4,19 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
-    <title>Pagina de Apresentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Portifólio - Eliseu</title>
 </head>
 <body>
-    <div class="conteudo-principal">
-        <div class="header">
-            <h1 class="titulo">Eliseu</h1>
-            <ul class="nav-bar">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Linguas</a></li>
-            </ul>
-        </div>
-    </div>
+    <main>
+        <header>
+            <div class="logo">
+                <h1>Portifólio</h1>
+            </div>
+            <div class="menu">
+                <nav class="nav-list">
+                    <a href="#home">Inicio</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="home-info">
+                <h2>Eliseu Pessin</h2>
+                <span class="home-position">Programador</span>
+                <span class="home-resume">
+                    Cursando Análise e Desenvolvimento de Sistemas
+                    atualmente no 6º semestre, atualmente estudando
+                    HTML, CSS, PHP e JS e um Frameworkzinho chamado
+                    REACT JS.
+                </span>
+
+                <button>
+                    <a href="https://linkr.bio/eliseuLima">Redes Sociais</a>
+                </button>
+            </div>
+            <div class="home-img">
+                <img src="./img/avatar2.png" alt="Imagem Eliseu">
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project-img">
+                    <img src="./img/login.png" alt="Foto de um site">
+                  </div>
+                  <div class="project-info">
+                    <h2>Tela de login</h2>
+                    <p>Criação de uma tela de login em um projeto da faculdade, utilizando somente HTML, CSS, PHP.</p>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <form>
+              <input type="text" placeholder="Digite seu nome" />
+              <input type="email" placeholder="Digite seu e-mail" />
+              <textarea cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+              <button>Enviar</button>
+            </form>
+          </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="script.js"></script>    
 </body>
 </html>
